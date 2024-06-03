@@ -105,18 +105,19 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
 # ls/eza
-alias l='eza -al --color=always --group-directories-first'
-alias ls='eza -al --color=always --group-directories-first'
-alias la='eza -a --color=always --group-directories-first'
-alias ll='eza -l --color=always --group-directories-first'
-alias lt='eza -aT --color=always --group-directories-first'
+alias l='eza -al --icons --color=always --group-directories-first'
+alias ls='eza -al --icons --color=always --group-directories-first'
+alias la='eza -a --icons --color=always --group-directories-first'
+alias ll='eza -l --icons --color=always --group-directories-first'
+alias lt='eza -aT --icons --color=always --group-directories-first'
 # for parent directories
-alias l.='eza -al --color=always --group-directories-first ../'
-alias l..='eza -al --color=always --group-directories-first ../../'
-alias l...='eza -al --color=always --group-directories-first ../../../'
+alias l.='eza -al --icons --color=always --group-directories-first ../'
+alias l..='eza -al --icons --color=always --group-directories-first ../../'
+alias l...='eza -al --icons --color=always --group-directories-first ../../../'
 
 # apt
 alias sai='sudo apt install'
+alias sas='apt search'
 alias saa='sudo apt auto-remove'
 alias sac='sudo apt auto-clean'
 
@@ -136,9 +137,11 @@ alias commit='git commit -m'
 alias fetch='git fetch'
 alias pull='git pull origin'
 alias push='git push origin'
-alias stat='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
+alias stat='git status'
+alias gs='git status'
+alias glog='git log --graph --decorate --oneline'
 
 # Change your default USER shell
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Log out and log back in for change to take effect.'"
@@ -158,6 +161,9 @@ alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 alias lsmount='mount | column -t'
 alias extip='curl icanhazip.com'
 alias upgrade='sudo apt update && sudo apt dist-upgrade'
+alias wdil='history | rg'
+alias rsync='rsync --info=progress2'
+alias pls='sudo !!'
 
 ### COMPLETION
 
